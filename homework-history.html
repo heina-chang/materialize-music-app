@@ -1,0 +1,443 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.ico"/>
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+  <title>Music Studio</title>
+  <style>
+
+    .section{
+      padding-top: 4vw;
+      padding-bottom: 4vw;
+    }
+    .tabs .indicator{
+      background-color: #187e2e;
+    }
+    /*.tabs .tab a:focus, .tabs .tab a:focus.active{*/
+    /*  background: transparent;*/
+    /*}*/
+    /*TODO how to style this?*/
+    .collection-header{
+      class: indigo-text text-darken-4;
+    }
+    .collapsible-header-inner{
+      /*position: absolute;*/
+      margin-right: 5rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- navbar -->
+  <header>
+    <nav class="nav-wrapper teal lighten-2">
+      <div class="container">
+        <a href="index.html" class="brand-logo">Music studio</a>
+        <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <!-- Dropdown Trigger -->
+          <li><a class="dropdown-trigger" href="students.html" data-target="dropdown1"><i class="material-icons left">group</i>Students<i class="material-icons right">arrow_drop_down</i></a></li>
+          <!--          <li class="active"><a href="students.html">Students</a></li>-->
+          <li class="active"><a href="homework.html"><i class="material-icons left">music_note</i>Homework</a></li>
+          <li><a href="#services"><i class="material-icons left">control_point</i>Teacher</a></li>
+          <li><a href="login.html"><i class="material-icons left">person</i>Login</a></li>
+        </ul>
+        <ul class="sidenav grey lighten-2" id="mobile-menu">
+          <li><a href="students.html"><i class="material-icons left">group</i>Students</a></li>
+          <li class="active"><a href="homework.html"><i class="material-icons left">music_note</i>Homework</a></li>
+          <li><a href="#"><i class="material-icons left">control_point</i>Teacher</a></li>
+          <li><a href="login.html"><i class="material-icons left">person</i>Login</a></li>
+        </ul>
+      </div>
+    </nav>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+      <li><a href="#students">SAT-Afternoon</a></li>
+      <li><a href="#fri-s">FRI-Evening</a></li>
+      <li><a href="#wed-s">WED-Evening</a></li>
+      <li class="divider"></li>
+      <li><a href="#">Ray S</a></li>
+      <li><a href="#">Sue F</a></li>
+      <li><a href="#">Kay A</a></li>
+    </ul>
+  </header>
+
+  <section class="container section scrollspy" id="homework">
+      <ul class="collapsible collection">
+        <li class="active">
+          <div class="collapsible-header collection-item avatar">
+            <img src="img/heina-mii.jpeg" alt="" class="circle">
+            2019
+          </div>
+          <div class="collapsible-body">
+            <div class="row">
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header collection-item"><i class="material-icons">child_care</i>WEEK 1</div>
+                  <div class="collapsible-body">
+                    <div>
+                      <p>
+                        <label>
+                          <input type="checkbox" disabled="disabled"/>
+                          <span>FINGER EXERCISE</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" disabled="disabled"/>
+                          <span>COCO CLOCK</span>
+                        </label>
+                      </p>
+
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header collection-item"><i class="material-icons">child_care</i>
+                    WEEK 2
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                  </div>
+                  <div class="collapsible-body">
+                    <div>
+                      <p>
+                        <label>
+                          <input type="checkbox" checked="checked" disabled="disabled"/>
+                          <span>FINGER EXERCISE</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" disabled="disabled"/>
+                          <span>COCO CLOCK</span>
+                        </label>
+                      </p>
+
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header collection-item"><i class="material-icons">child_care</i>WEEK 3
+                  </div>
+                  <div class="collapsible-body">
+                    <div>
+                      <p>
+                        <label>
+                          <input type="checkbox" disabled="disabled"/>
+                          <span>FINGER EXERCISE</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" disabled="disabled"/>
+                          <span>COCO CLOCK</span>
+                        </label>
+                      </p>
+
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header  collection-item"><i class="material-icons">child_care</i>WEEK 4
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade grade grade</i></a>
+                  </div>
+                  <div class="collapsible-body">
+                    <div>
+                      <p>
+                        <label>
+                          <input type="checkbox" checked="checked" disabled="disabled"/>
+                          <span>FINGER EXERCISE</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" checked="checked" disabled="disabled"/>
+                          <span>COCO CLOCK BOTH HANDS</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" checked="checked" disabled="disabled"/>
+                          <span>HAPPY DAY BOTH HANDS</span>
+                        </label>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="collapsible-header collection-item avatar">
+            <img src="img/heina-mii.jpeg" alt="" class="circle">
+            2018
+          </div>
+          <div class="collapsible-body">
+
+            <div class="row">
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header collection-item"><i class="material-icons">child_care</i>WEEK 1</div>
+                  <div class="collapsible-body">
+                    <div>
+                      <p>
+                        <label>
+                          <input type="checkbox" disabled="disabled"/>
+                          <span>FINGER EXERCISE</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" disabled="disabled"/>
+                          <span>COCO CLOCK</span>
+                        </label>
+                      </p>
+
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header collection-item"><i class="material-icons">child_care</i>
+                    WEEK 2
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                  </div>
+                  <div class="collapsible-body">
+                    <div>
+                      <p>
+                        <label>
+                          <input type="checkbox" checked="checked" disabled="disabled"/>
+                          <span>FINGER EXERCISE</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" disabled="disabled"/>
+                          <span>COCO CLOCK</span>
+                        </label>
+                      </p>
+
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header collection-item"><i class="material-icons">child_care</i>WEEK 3
+                  </div>
+                  <div class="collapsible-body">
+                    <div>
+                      <p>
+                        <label>
+                          <input type="checkbox" disabled="disabled"/>
+                          <span>FINGER EXERCISE</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" disabled="disabled"/>
+                          <span>COCO CLOCK</span>
+                        </label>
+                      </p>
+
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header  collection-item"><i class="material-icons">child_care</i>WEEK 4
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade grade grade</i></a>
+                  </div>
+                  <div class="collapsible-body">
+                    <div>
+                      <p>
+                        <label>
+                          <input type="checkbox" checked="checked" disabled="disabled"/>
+                          <span>FINGER EXERCISE</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" checked="checked" disabled="disabled"/>
+                          <span>COCO CLOCK BOTH HANDS</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" checked="checked" disabled="disabled"/>
+                          <span>HAPPY DAY BOTH HANDS</span>
+                        </label>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header collection-item avatar">
+            <img src="img/heina-mii.jpeg" alt="" class="circle">
+            2017
+          </div>
+          <div class="collapsible-body">
+
+            <div class="row">
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header collection-item"><i class="material-icons">child_care</i>WEEK 1</div>
+                  <div class="collapsible-body">
+                    <div>
+                      <p>
+                        <label>
+                          <input type="checkbox" disabled="disabled"/>
+                          <span>FINGER EXERCISE</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" disabled="disabled"/>
+                          <span>COCO CLOCK</span>
+                        </label>
+                      </p>
+
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header collection-item"><i class="material-icons">child_care</i>
+                    WEEK 2
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade</i></a>
+                  </div>
+                  <div class="collapsible-body">
+                    <div>
+                      <p>
+                        <label>
+                          <input type="checkbox" checked="checked" disabled="disabled"/>
+                          <span>FINGER EXERCISE</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" disabled="disabled"/>
+                          <span>COCO CLOCK</span>
+                        </label>
+                      </p>
+
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header collection-item"><i class="material-icons">child_care</i>WEEK 3
+                  </div>
+                  <div class="collapsible-body">
+                    <div>
+                      <p>
+                        <label>
+                          <input type="checkbox" disabled="disabled"/>
+                          <span>FINGER EXERCISE</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" disabled="disabled"/>
+                          <span>COCO CLOCK</span>
+                        </label>
+                      </p>
+
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header  collection-item"><i class="material-icons">child_care</i>WEEK 4
+                    <a href="#!" class="secondary-content"><i class="material-icons">grade grade grade</i></a>
+                  </div>
+                  <div class="collapsible-body">
+                    <div>
+                      <p>
+                        <label>
+                          <input type="checkbox" checked="checked" disabled="disabled"/>
+                          <span>FINGER EXERCISE</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" checked="checked" disabled="disabled"/>
+                          <span>COCO CLOCK BOTH HANDS</span>
+                        </label>
+                      </p>
+                      <p>
+                        <label>
+                          <input type="checkbox" checked="checked" disabled="disabled"/>
+                          <span>HAPPY DAY BOTH HANDS</span>
+                        </label>
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+
+
+            </div>
+          </div>
+        </li>
+    </ul>
+  </section>
+
+  <!-- footer -->
+  <footer class="page-footer grey darken-3">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5>About Me</h5>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at lacus congue, suscipit elit nec, tincidunt orci.</p>
+        </div>
+        <div class="col l4 offset-l2 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Twitter</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">LinkedIn</a></li>
+            <li><a class="grey-text text-lighten-3" href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright grey darken-4">
+      <div class="container center-align">&copy; 2019 Heina Chang</div>
+    </div>
+  </footer>
+
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+  <script>
+    $(document).ready(function(){
+
+      $('.sidenav').sidenav();
+      $('.materialboxed').materialbox();
+      $('.parallax').parallax();
+      $('.tabs').tabs();
+      $('.datepicker').datepicker({
+        disableWeekends: true,
+        yearRange: 1
+      });
+      $('.tooltipped').tooltip();
+      $('.scrollspy').scrollSpy();
+      $('.collapsible').collapsible();
+
+    });
+  </script>
+</body>
+</html>
