@@ -1,4 +1,4 @@
-# materialize design music studio
+# Materialize Design Music Studio
 
 This is a markup of a music studio for a teacher to create homework and for students to view and submit homework.
 
